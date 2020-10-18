@@ -15,7 +15,7 @@ export interface User {
   providedIn: 'root'
 })
 export class GoogleService {
-  private clientId = '915265282911-t2tuqag079jdt4bn9j4a8pv13mmo2q6m.apps.googleusercontent.com';
+  private clientId = '915265282911-nlhhekab7a1u6gm7cf2htkfhj8pnsbm6.apps.googleusercontent.com';
   private GoogleAuth: GoogleAuth;
 
   private user: BehaviorSubject<User> = new BehaviorSubject<User>({isAuthorized: false});
