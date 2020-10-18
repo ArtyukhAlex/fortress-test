@@ -1,0 +1,12 @@
+<div class="container container--page">
+  <mat-card class="login-card">
+    <h1>{{ user && user.isAuthorized ? 'Sign in' : 'Sign up with google' }}</h1>
+    <div *ngIf="user.isAuthorized; else notAuthorized">
+      <a mat-raised-button [routerLink]="['/details']">Continue as {{ user.name }}</a>
+      <button mat-raised-button color="accent" (click)="logoutAndLogin()">Use another account</button>
+    </div>
+    <ng-template #notAuthorized>
+      <button mat-raised-button color="primary" (click)="login()">Sign up</button>
+    </ng-template>
+  </mat-card>
+</div>

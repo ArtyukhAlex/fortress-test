@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--page {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &--center {
+    align-items: center;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
